@@ -1,0 +1,60 @@
+.bg-login {background: #eeeeee; color:#000;}
+a.bg-login:hover, a.bg-login:focus,
+button.bg-login:hover,
+button.bg-login:focus {background-color: #717171 !important; }
+.rounded-5 {border-radius: 0.2rem !important; }
+
+/* Structure CSS */
+.c-push-left {padding-left:10rem !important;}
+.c-push-right {padding-right:7rem !important;}
+.c-hovering:hover {background: #eee; border-radius: 0.25rem; transition: all 0.1s ease-in-out;}
+
+/* Navigation Style */
+.c-pr-5 {padding-right:10rem !important;}
+.c-pl-5 {padding-left:9rem !important;}
+.navbar {background:#000000 !important}
+.profile-title {font-size:25px !important;padding-bottom: 5px;}
+.c-user-title {font-size:15px;}
+
+/* Accordion Style */
+.c-side-menu .card-header, .card {background-color: #fff;}
+.c-side-menu .card-body {text-align: right !important; padding:0px;}
+.c-side-menu .card-header { padding: 0rem 1.25rem !important;}
+
+/* Side Menu Style */
+.c-side-menu {min-height: 82vh;}
+.c-nav-buffer { margin-top: 4.5rem !important;}
+.link-name {font-size: 14px;}
+.c-quick-nav {letter-spacing: 5px;font-size: 12px;margin-left: -5px; padding-bottom: 5px;padding-top:2px;}
+
+/* Container */
+.c-m-5 {margin: 3rem 3.5rem 0rem 3.5rem !important;}
+a.c-hot-link {text-decoration: none;color:#5d5d5d;}
+
+/* Table Styles */
+.page-item.disabled .page-link, .page-item:last-child .page-link,.page-item:first-child .page-link { background: #fff !important;}
+.page-link {background-color:#fff; }
+.merchant table label {display: inline-flex !important;}
+.sorting_1 tb {width: 10px;}
+.sorting_asc {width: 100px !important;}
+.dataTables_length label, .dataTables_filter label {display: inline-flex !important;}
+.dataTables_length select {width:50px;margin:-3px 10px 0 10px;}
+.dataTables_filter input {width:150px;margin:-3px 10px 0 10px;}
+
+/** shadow from 4.1 **/
+.shadow-sm { box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
+.shadow { box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+.shadow-lg { box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
+.shadow-md { box-shadow: 0 0.6rem 1.8rem rgba(0, 0, 0, 0.175) !important}
+.shadow-none { box-shadow: none !important; }
+/* End Shadow Style  */
+
+/* Custom Backgrounds */
+.bg-login {
+  background-image: url(.https://d32wlusbkxfia2.cloudfront.net/spectapay/assets/img/login.svg);
+  background-position: bottom center, center right;
+  background-size: cover, cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}

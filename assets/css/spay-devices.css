@@ -1,0 +1,29 @@
+/* ================== SMALL SCREENS 320 - 480 =================== */
+@media (min-width: 320px) and (max-width: 900px)
+{
+    .w-75 {width: 25% !important; }
+    .m-logo-m-100 {margin-left: 120px;}
+
+    /* Structure CSS */
+    .c-push-left {padding-left:1rem !important;}
+    .c-push-right {padding-right:1rem !important;}
+
+    /* Navigation Style */
+    .c-pr-5 {padding-right:1rem !important;}
+    .c-pl-5 {padding-left:1.5rem !important;}
+
+    .c-nav-buffer {text-align: left !important; margin-top: 1.0rem !important;}
+
+    /* Accordion Style */
+    .c-side-menu .card-body {text-align: left !important;}
+
+    /* Side Menu Style */
+    .c-side-menu {border-right:none; min-height: 5vh;}
+
+    /* Container */
+    .c-m-5 {margin: 1.8rem 0.1rem !important;}
+    a.c-hot-link {text-decoration: none;}
+
+    /* Table Styles */
+    .sorting_1::before{font-family: FontAwesome; display: inline-block; content: "\f055";padding-right: 3px;}
+}
