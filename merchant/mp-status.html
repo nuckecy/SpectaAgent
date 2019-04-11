@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,13 +12,12 @@
     <link rel="icon" href="https://db6ud9d668pjr.cloudfront.net/web/assets/img/specta-icon.png">
     <link rel="manifest" href="https://db6ud9d668pjr.cloudfront.net/web/assets/icons/manifest.json">
 
-    <title>Admin Dashboard - Pay with Specta by Sterling Bank</title>
-    <meta name="description" content="SpectaPay for Administrators">
+    <title>Agent Password Update - SpectaPay by Sterling Bank</title>
+    <meta name="description" content="SpectaPay for Merchant">
     <meta name="keywords" content="specta,spectapay,assets">
     <meta name="author" content="Sterling Bank Plc">
     <!-- CSS dependencies -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://db6ud9d668pjr.cloudfront.net/spectapay/assets/css/spay-main.css">
     <link rel="stylesheet" href="https://db6ud9d668pjr.cloudfront.net/spectapay/assets/css/spay-custom.css">
     <link rel="stylesheet" href="https://db6ud9d668pjr.cloudfront.net/spectapay/assets/css/spay-devices.css">
@@ -32,9 +32,12 @@
             <a class="navbar-brand c-pl-5" title="SpectaPay by Sterling Bank Plc" data-placement="bottom" data-toggle="tooltip"
                 href="#"><img src="https://db6ud9d668pjr.cloudfront.net/web/assets/img/specta.png" class="w-50" alt="Specta Logo"></a>
             <ul class="navbar-nav flex-row justify-content-center mt-2 mt-md-0 c-pr-5">
-                <li class="p-2"><div class="c-user-title text-white">Good Morning Otobong</div></li>
+                <li class="p-2">
+                    <div class="c-user-title text-white">Good Morning Otobong</div>
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
+                    <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
                     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 36px, 0px); top: 0px; left: -120px; will-change: transform;">
                         <a class="dropdown-item" href="dashboard.html">Dashboard</a>
                         <a class="dropdown-item" href="merchant-reg.html">Merchants</a>
@@ -47,7 +50,7 @@
         </div>
     </nav>
     <div class="container-fluid bg-primary">
-        <h1 class="c-pl-5 m-0 font-weight-light profile-title">SpectaPay Administrator</h1>
+        <h1 class="c-pl-5 m-0 font-weight-light profile-title">Merchant Name</h1>
     </div>
 
     <div class="container-fluid c-push-right c-push-left">
@@ -63,12 +66,23 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
                                 <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-                                    <li class="active"><a href="dashboard.html"><span class="fa-stack fa-lg pull-left"><i
-                                                    class="fa fa-dashboard fa-stack-1x "></i></span> <span class="link-name">Dashboard</span></a></li>
-                                    <li><a href="merchant-in.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span><span
-                                                class="link-name">New Interest</span></a></li>
-                                    <li><a href="merchant-reg.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users fa-stack-1x "></i></span><span
-                                                class="link-name">Merchant List</span></a></li>
+                                    <li class="active"><a href="merchant-dashboard.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> <span class="link-name">Dashboard</span></a></li>
+                                    <li><a href="m-agent.html">
+                                        <span class="fa-stack fa-lg pull-left"><i class="fa fa-user-plus fa-stack-1x "></i></span>
+                                        <span class="link-name">Agents</span></a>
+                                    </li>
+                                    <li><a href="m-product.html">
+                                        <span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>
+                                        <span class="link-name">Products</span></a>
+                                    </li>
+                                    <li><a href="m-store.html">
+                                            <span class="fa-stack fa-lg pull-left"><i class="fa fa-home fa-stack-1x "></i></span>
+                                            <span class="link-name">Stores</span></a>
+                                    </li>
+                                    <li><a href="m-report.html">
+                                            <span class="fa-stack fa-lg pull-left"><i class="fa fa-bar-chart-o fa-stack-1x "></i></span>
+                                            <span class="link-name">Reports</span></a>
+                                    </li>
                                     <hr class="mt-2 mb-2" style="border-color:#eeeeee;">
                                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span><span
                                                 class="link-name">My Account</span></a></li>
@@ -82,25 +96,36 @@
             </div>
             <div class="col-md-9">
                 <div class="c-m-5">
-                    <h3 class="text-primary mb-1 text-uppercase">Dashboard</h3>
+                    <h3 class="text-primary mb-1 text-uppercase">Product Creation</h3>
                     <hr class="m-0" style="border:1px solid #eee;">
                     <div class="pt-3">
                         <div class="row col-md-12">
-                            <div class="d-flex flex-wrap">
-                                <a href="merchant-add.html" class="pt-2 pb-2 col-md-6 d-flex c-hovering c-hot-link">
-                                    <div class="p-2 rounded-5" style="background:green;"><i class="fa fa-user-plus fa-2x p-1 text-white"></i></div>
-                                    <span class="pt-2 pl-4 p-2" style="display:block;font-size:20px;font-weight:500;">Add New Merchant</span>
-                                </a>
-                                <a href="merchant-in.html" class="pt-2 pb-2 col-md-6 d-flex c-hovering c-hot-link">
-                                    <div class="p-2 rounded-5" style="background:#a00065;"><i class="fa fa-users fa-2x p-1 text-white"></i></div>
-                                    <span class="pt-2 pl-4 p-2" style="display:block;font-size:20px;font-weight:500;">View
-                                        all Merchant</span>
-                                </a>
-                                <a href="merchant-reg.html" class="pt-2 pb-2 col-md-6 d-flex c-hovering c-hot-link">
-                                    <div class="p-2 rounded-5" style="background:orange;"><i class="fa fa-search-plus fa-2x p-1 text-white"></i></div>
-                                    <span class="pt-2 pl-4 p-2" style="display:block;font-size:20px;font-weight:500;">Interested
-                                        Merchant</span>
-                                </a>
+                            <div class="offset-md-2 col-md-8 shadow-sm" style="background: #fff;border-top:1px solid #eee;">
+                                <div class="p-3">
+                                    <h3 class="text-secondary m-0 text-center">Great! Product Creation Successful/Failed</h3>
+                                    <hr class="mb-3 mt-1" style="border-bottom:1px solid #eee;">
+                                    <div>
+                                        <div class="row mb-3 justify-content-md-center">
+                                            <div class="col-12">
+                                                <img src="../assets/img/failed.svg" alt="Failed" class="w-25 mx-auto d-block">
+                                                <img src="../assets/img/success.svg" alt="Failed" class="w-25 mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3 justify-content-md-center">
+                                            <div class="col-12 text-center">
+                                                <h5 class="text-primary">New Product Creation was Successful/Failed.  Thank you.</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3 justify-content-md-center">
+                                                <div class="col-md-auto">
+                                                    <a href="mp-add.html" class="text-center btn btn-outline-primary font-weight-bold text-primary">Create New</a>
+                                                </div>
+                                                <div class="col-md-auto">
+                                                        <a href="m-product.html" class="text-center btn btn-outline-white font-weight-bold text-primary">Return to Dashboard</a>
+                                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

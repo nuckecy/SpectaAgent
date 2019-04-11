@@ -1,0 +1,44 @@
+/* Product Search Form */
+.is-vishidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  
+  .pattern {
+    /* padding: 1em;  */
+    line-height: 1;
+  }
+  .f {
+     position: relative; 
+  }
+  
+  input {
+    display: block;
+    border: 1px solid #a00065;
+    border-radius: 3px;
+  }
+  
+  input[type=search] {
+      width: 100%;
+      padding: 1em;
+      padding-right: 16em;
+      position: relative;
+     top: 0;
+  }
+  
+  input[type=submit] {
+    position: absolute;
+    right: 0.75em;
+    top: 2.2em;
+    bottom: 0.5em;
+    z-index: 1;
+    width: 6em;
+    padding: 0;
+    cursor: pointer;
+    color:#a00065;
+  }

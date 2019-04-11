@@ -11,8 +11,8 @@
     <link rel="icon" href="https://db6ud9d668pjr.cloudfront.net/web/assets/img/specta-icon.png">
     <link rel="manifest" href="https://db6ud9d668pjr.cloudfront.net/web/assets/icons/manifest.json">
 
-    <title>Add Merchant - Pay with Specta by Sterling Bank</title>
-    <meta name="description" content="SpectaPay for Administrators">
+    <title>Update Agent Profile - SpectaPay by Sterling Bank</title>
+    <meta name="description" content="SpectaPay for Merchant">
     <meta name="keywords" content="specta,spectapay,assets">
     <meta name="author" content="Sterling Bank Plc">
     <!-- CSS dependencies -->
@@ -50,7 +50,7 @@
         </div>
     </nav>
     <div class="container-fluid bg-primary">
-        <h1 class="c-pl-5 m-0 font-weight-light profile-title">SpectaPay Administrator</h1>
+        <h1 class="c-pl-5 m-0 font-weight-light profile-title">Merchant Name</h1>
     </div>
 
     <div class="container-fluid c-push-right c-push-left">
@@ -66,12 +66,23 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
                                 <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-                                    <li class="active"><a href="dashboard.html"><span class="fa-stack fa-lg pull-left"><i
-                                                    class="fa fa-dashboard fa-stack-1x "></i></span> <span class="link-name">Dashboard</span></a></li>
-                                    <li><a href="merchant-in.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span><span
-                                                class="link-name">New Interest</span></a></li>
-                                    <li><a href="merchant-reg.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users fa-stack-1x "></i></span><span
-                                                class="link-name">Merchant List</span></a></li>
+                                    <li class="active"><a href="merchant-dashboard.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> <span class="link-name">Dashboard</span></a></li>
+                                    <li><a href="m-agent.html">
+                                        <span class="fa-stack fa-lg pull-left"><i class="fa fa-user-plus fa-stack-1x "></i></span>
+                                        <span class="link-name">Agents</span></a>
+                                    </li>
+                                    <li><a href="m-product.html">
+                                        <span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>
+                                        <span class="link-name">Products</span></a>
+                                    </li>
+                                    <li><a href="m-store.html">
+                                            <span class="fa-stack fa-lg pull-left"><i class="fa fa-home fa-stack-1x "></i></span>
+                                            <span class="link-name">Stores</span></a>
+                                    </li>
+                                    <li><a href="m-report.html">
+                                            <span class="fa-stack fa-lg pull-left"><i class="fa fa-bar-chart-o fa-stack-1x "></i></span>
+                                            <span class="link-name">Reports</span></a>
+                                    </li>
                                     <hr class="mt-2 mb-2" style="border-color:#eeeeee;">
                                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span><span
                                                 class="link-name">My Account</span></a></li>
@@ -85,59 +96,71 @@
             </div>
             <div class="col-md-9">
                 <div class="c-m-5">
-                    <h3 class="text-primary mb-1 text-uppercase">Add Merchant</h3>
+                    <h3 class="text-primary mb-1 text-uppercase">Update Agent Profile</h3>
                     <hr class="m-0" style="border:1px solid #eee;">
                     <div class="pt-3">
                         <div class="row col-md-12">
                             <div class="offset-1 col-md-10 shadow-sm" style="background: #fff;border-top:1px solid #eee;">
                                 <div class="p-3">
-                                    <h3 class="text-secondary mb-3">Create a New Merchant</h3>
-                                    <form method="post" action="">
+                                    <h3 class="text-secondary m-0">Profile Edit: Jane Doe</h3>
+                                    <hr class="mb-3 mt-1" style="border-bottom:1px solid #eee;">
+                                    <form>
                                         <div class="row mb-2">
-                                            <div class="form-group mb-0 col-md-6 pb-1">
-                                                <label for="firstname" class="font-weight-bold text-secondary m-0">First Name
-                                                <input type="text" name="firstname" id="firstname" class="form-control rounded-5" placeholder="First Name">
-                                                </label>
-                                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email.</small> -->
-                                            </div> 
-                                            <div class="form-group mb-0 col-md-6 pb-1">
-                                                <label for="lastname" class="font-weight-bold text-secondary m-0">Last Name
-                                                <input type="text" name="lastname" id="lastname" class="form-control rounded-5" placeholder="Last Name">
-                                            </label>
-                                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email.</small> -->
-                                            </div> 
-                                        </div>
-                                        <div class="row mb-2">
-                                            <div class="form-group mb-0 col-md-12 pb-1">
-                                                <select class="form-control">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
+                                            <div class="col">
+                                                <label for="exampleSelect1" class="mb-0 font-weight-bold text-uppercase">Store/Location</label>
+                                                <select class="form-control" id="exampleSelect1">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
                                                 </select>
                                             </div>
+                                            <div class="col">
+                                                <label for="exampleInputEmail1" class="mb-0 font-weight-bold text-uppercase">Full Name</label>
+                                                <input type="email" class="form-control rounded" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                            </div>
                                         </div>
                                         <div class="row mb-2">
-                                            <div class="form-group mb-0 col-md-12">
-                                                <div class="input-group">
-                                                    <label for="username" class="font-weight-bold text-secondary m-0">Username
-                                                    <div class="input-group-prepend"><span class="input-group-text" id="basic-addon1">@</span></div>
-                                                    <input type="text" id="username" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-                                                    </label>
-                                                </div>
+                                            <div class="col">
+                                                <label for="exampleInputEmail1" class="mb-0 font-weight-bold text-uppercase">Gender</label>
+                                                <select class="form-control" id="exampleSelect1">
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                    </select>
+                                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                            </div>
+                                            <div class="col">
+                                                <label for="exampleInputEmail1" class="mb-0 font-weight-bold text-uppercase">Designation</label>
+                                                <select class="form-control" id="exampleSelect1">
+                                                        <option>Retail Manager</option>
+                                                        <option>Retail Agent</option>
+                                                        <option>Retail Assistant</option>
+                                                        <option>Intern</option>
+                                                    </select>
+                                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                             </div>
                                         </div>
-                                        
-                                        <div class="row mb-2 col-12">
-                                            <div class="form-check form-check-inline"> 
-                                                <label class="form-check-label"><input class="form-check-input" type="radio" value="option1" id="inlineRadio1" name="inlineRadioOptions"> Female</label>
+
+                                        <div class="row mb-2">
+                                            <div class="col">
+                                                <label for="exampleInputEmail1" class="mb-0 font-weight-bold text-uppercase">Mobile</label>
+                                                <input type="email" class="form-control rounded" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label"><input class="form-check-input" type="radio" value="option2" id="inlineRadio2" name="inlineRadioOptions"> Male
-                                                </label>
+                                            <div class="col">
+                                                <label for="exampleInputEmail1" class="mb-0 font-weight-bold text-uppercase">Email Address</label>
+                                                <input type="email" class="form-control rounded" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                             </div>
                                         </div>
-                                        
-                                        <button type="submit" class="btn btn-primary my-2">Submit button</button>
+
+                                        <div class="row mb-3 mt-3">
+                                                <div class="col"><button type="submit" class="btn btn-block btn-primary">Update Profile</button></div>
+                                                <div class="col"><button type="submit" class="btn btn-block btn-outline-info">Cancel</button></div>
+                                        </div>
+
                                     </form>
                                 </div>
                             </div>

@@ -11,13 +11,12 @@
     <link rel="icon" href="https://db6ud9d668pjr.cloudfront.net/web/assets/img/specta-icon.png">
     <link rel="manifest" href="https://db6ud9d668pjr.cloudfront.net/web/assets/icons/manifest.json">
 
-    <title>Add Merchant - Pay with Specta by Sterling Bank</title>
-    <meta name="description" content="SpectaPay for Administrators">
+    <title>Agent Details - SpectaPay by Sterling Bank</title>
+    <meta name="description" content="SpectaPay for Merchant">
     <meta name="keywords" content="specta,spectapay,assets">
     <meta name="author" content="Sterling Bank Plc">
     <!-- CSS dependencies -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://db6ud9d668pjr.cloudfront.net/spectapay/assets/css/spay-main.css">
     <link rel="stylesheet" href="https://db6ud9d668pjr.cloudfront.net/spectapay/assets/css/spay-custom.css">
     <link rel="stylesheet" href="https://db6ud9d668pjr.cloudfront.net/spectapay/assets/css/spay-devices.css">
@@ -50,7 +49,7 @@
         </div>
     </nav>
     <div class="container-fluid bg-primary">
-        <h1 class="c-pl-5 m-0 font-weight-light profile-title">SpectaPay Administrator</h1>
+        <h1 class="c-pl-5 m-0 font-weight-light profile-title">Merchant Name</h1>
     </div>
 
     <div class="container-fluid c-push-right c-push-left">
@@ -66,12 +65,23 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
                                 <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-                                    <li class="active"><a href="dashboard.html"><span class="fa-stack fa-lg pull-left"><i
-                                                    class="fa fa-dashboard fa-stack-1x "></i></span> <span class="link-name">Dashboard</span></a></li>
-                                    <li><a href="merchant-in.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span><span
-                                                class="link-name">New Interest</span></a></li>
-                                    <li><a href="merchant-reg.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users fa-stack-1x "></i></span><span
-                                                class="link-name">Merchant List</span></a></li>
+                                    <li class="active"><a href="merchant-dashboard.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> <span class="link-name">Dashboard</span></a></li>
+                                    <li><a href="m-agent.html">
+                                        <span class="fa-stack fa-lg pull-left"><i class="fa fa-user-plus fa-stack-1x "></i></span>
+                                        <span class="link-name">Agents</span></a>
+                                    </li>
+                                    <li><a href="m-product.html">
+                                        <span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>
+                                        <span class="link-name">Products</span></a>
+                                    </li>
+                                    <li><a href="m-store.html">
+                                            <span class="fa-stack fa-lg pull-left"><i class="fa fa-home fa-stack-1x "></i></span>
+                                            <span class="link-name">Stores</span></a>
+                                    </li>
+                                    <li><a href="m-report.html">
+                                            <span class="fa-stack fa-lg pull-left"><i class="fa fa-bar-chart-o fa-stack-1x "></i></span>
+                                            <span class="link-name">Reports</span></a>
+                                    </li>
                                     <hr class="mt-2 mb-2" style="border-color:#eeeeee;">
                                     <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span><span
                                                 class="link-name">My Account</span></a></li>
@@ -85,59 +95,54 @@
             </div>
             <div class="col-md-9">
                 <div class="c-m-5">
-                    <h3 class="text-primary mb-1 text-uppercase">Add Merchant</h3>
+                    <h3 class="text-primary mb-1 text-uppercase">Agent: Jane Doe</h3>
                     <hr class="m-0" style="border:1px solid #eee;">
                     <div class="pt-3">
                         <div class="row col-md-12">
-                            <div class="offset-1 col-md-10 shadow-sm" style="background: #fff;border-top:1px solid #eee;">
+                            <div class="offset-md-2 col-md-8 shadow-sm" style="background: #fff;border-top:1px solid #eee;">
                                 <div class="p-3">
-                                    <h3 class="text-secondary mb-3">Create a New Merchant</h3>
-                                    <form method="post" action="">
-                                        <div class="row mb-2">
-                                            <div class="form-group mb-0 col-md-6 pb-1">
-                                                <label for="firstname" class="font-weight-bold text-secondary m-0">First Name
-                                                <input type="text" name="firstname" id="firstname" class="form-control rounded-5" placeholder="First Name">
-                                                </label>
-                                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email.</small> -->
-                                            </div> 
-                                            <div class="form-group mb-0 col-md-6 pb-1">
-                                                <label for="lastname" class="font-weight-bold text-secondary m-0">Last Name
-                                                <input type="text" name="lastname" id="lastname" class="form-control rounded-5" placeholder="Last Name">
-                                            </label>
-                                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email.</small> -->
-                                            </div> 
-                                        </div>
-                                        <div class="row mb-2">
-                                            <div class="form-group mb-0 col-md-12 pb-1">
-                                                <select class="form-control">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select>
+                                    <h3 class="text-secondary m-0">Jane Doe Details</h3>
+                                    <hr class="mb-3 mt-1" style="border-bottom:1px solid #eee;">
+                                    <form>
+                                        <div class="row mb-3">
+                                            <div class="col">
+                                                <h4 class="text-secondary m-0">Jane Doe</h4>
+                                                <small id="emailHelp" class="m-0 form-text font-weight-bold text-uppercase text-primary">Agent Name</small>
+                                            </div>
+                                            <div class="col">
+                                                <h4 class="text-secondary m-0">Lagos Island</h4>
+                                                <small id="emailHelp" class="m-0 form-text font-weight-bold text-uppercase text-primary">Agent Location</small>
                                             </div>
                                         </div>
-                                        <div class="row mb-2">
-                                            <div class="form-group mb-0 col-md-12">
-                                                <div class="input-group">
-                                                    <label for="username" class="font-weight-bold text-secondary m-0">Username
-                                                    <div class="input-group-prepend"><span class="input-group-text" id="basic-addon1">@</span></div>
-                                                    <input type="text" id="username" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-                                                    </label>
-                                                </div>
+                                        <div class="row mb-3">
+                                            <div class="col">
+                                                <h4 class="text-secondary m-0">Retail Agent</h4>
+                                                <small id="emailHelp" class="m-0 form-text font-weight-bold text-uppercase text-primary">Designation</small>
+                                            </div>
+                                            <div class="col">
+                                                <h4 class="text-secondary m-0">Female</h4>
+                                                <small id="emailHelp" class="m-0 form-text font-weight-bold text-uppercase text-primary">Gender</small>
                                             </div>
                                         </div>
-                                        
-                                        <div class="row mb-2 col-12">
-                                            <div class="form-check form-check-inline"> 
-                                                <label class="form-check-label"><input class="form-check-input" type="radio" value="option1" id="inlineRadio1" name="inlineRadioOptions"> Female</label>
+
+                                        <div class="row mb-3">
+                                            <div class="col">
+                                                <h4 class="text-secondary m-0">07005443221</h4>
+                                                <small id="emailHelp" class="m-0 form-text font-weight-bold text-uppercase text-primary">Mobile</small>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <label class="form-check-label"><input class="form-check-input" type="radio" value="option2" id="inlineRadio2" name="inlineRadioOptions"> Male
-                                                </label>
+                                            <div class="col">
+                                                <p class="text-secondary m-0 font-weight-bold">janedoe@emailaddress.com</p>
+                                                <small id="emailHelp" class="m-0 form-text font-weight-bold text-uppercase text-primary">Email</small>
                                             </div>
                                         </div>
-                                        
-                                        <button type="submit" class="btn btn-primary my-2">Submit button</button>
+                                        <div class="row mb-0">
+                                                <div class="col"><a href="ma-reset.html" class="font-weight-bold text-primary text-center"><p style="padding:5px 10px;border:1px solid #999; border-radius: 3px;">Change Agent Password</p></a></div>
+                                        </div>
+                                        <hr class="mb-3 mt-0" style="border-bottom:1px solid #eee;">
+                                        <div class="row mb-3">
+                                                <div class="col"><a href="ma-edit.html" class="btn btn-block btn-primary font-weight-bold">Update Profile</a></div>
+                                                <div class="col"><a href="mp-edit.html" class="btn btn-block btn-outline-info font-weight-bold">Suspend Agent</a></div>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
